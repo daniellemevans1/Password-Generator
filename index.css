@@ -1,0 +1,109 @@
+/* Globa; style */
+
+:root {
+    --background: #E8F1EC;
+    --title: #46DD80;
+    --white: #F7FDFD;
+    --button-p: #15BF81;
+    --p-background: #263548;
+    --main-color-app: #202938;
+}
+
+/*
+body {
+    margin: 0;
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* End global style */
+
+body {
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+
+main {
+    background-color: var(--main-color-app);
+    height: 100vh;
+    max-width: 600px;
+    width: 100vw;
+    max-height: 600px;
+    border: 5px solid var(--white);
+    margin-top: 100px;
+    border-radius: 25px;
+    padding: 120px 60px;
+}
+
+span {
+    color: var(--title);
+    display: block;
+}
+
+h3 {
+    margin: 20px 0 60px 0;
+}
+
+button {
+    background-color: var(--button-p);
+    padding: 10px;
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+hr {
+    background-color: var(--p-background);
+    border: 1px solid var(--p-background);
+    margin-bottom: 30px;
+}
+
+#pass1-el, #pass2-el {
+    background-color: var(--p-background);
+    padding: 10px 50px;
+    color: var(--button-p);
+    width: 225px;
+}
+
+#pass1-el {
+    margin: 20px 15px 20px 0px;
+}
+
+#pass2-el {
+    margin: 20px 15px 20px 0px;
+}
+
+
+
+@media only screen and (min-width: 500px) {
+
+    .displays {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #pass1-el, #pass2-el {
+        padding: 10px 25px;
+        text-align: center;
+        width: 225px;
+        display: inline;
+    }
+    
+    #pass1-el {
+        margin: 40px 15px 20px 0px;
+    }
+    
+    #pass2-el {
+        margin: 40px 0px 20px 0px;
+    }
+}
